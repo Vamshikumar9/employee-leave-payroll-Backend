@@ -74,7 +74,7 @@ public SecurityFilterChain securityFilterChain(
 public CorsConfigurationSource corsConfigurationSource() {
     CorsConfiguration config = new CorsConfiguration();
 
-    config.setAllowedOrigins(List.of(allowedOrigin));
+    config.setAllowedOrigins(List.of("https://employee-leave-payroll-frontend.onrender.com"));
     config.setAllowedMethods(List.of(
         "GET", "POST", "PUT", "PATCH",
         "DELETE", "OPTIONS"
